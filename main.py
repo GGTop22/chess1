@@ -4,3 +4,4 @@ if (len(move)) == 5:
     print(k1, k2)
 else:
     print('ERROR')
+#
