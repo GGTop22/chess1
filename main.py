@@ -10,7 +10,7 @@ if (len(move)) == 5:
 else:
     #print(k1, k2 ,'YES')
     print('ERROR')
-
+#проверку правильности хода нужно переделать!
 if move in (k1,k2 ):
     print(k1, k2 ,'YES')
 else:
