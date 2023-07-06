@@ -4,6 +4,10 @@ def symbolsToIntCoord(k: str) -> (int, int):
     return (a, b)
 
 
+def isKnightJunp(p1: (int, int), p2: (int, int)) -> bool:
+    return (abs(p1[0] - p2[0]) == 2 and abs(p1[1] - p2[1]) == 1) or (abs(p1[0] - p2[0]) == 1 and abs(p1[1] - p2[1]) == 2)
+
+
 move = input("vvedite hod konёm")
 move = move.upper()
 if (len(move)) == 5:
@@ -17,10 +21,18 @@ if (len(move)) == 5:
     point1 = symbolsToIntCoord(k1)
     point2 = symbolsToIntCoord(k2)
     print(point1, point2)
+    point1 = symbolsToIntCoord(k1)
+    point2 = symbolsToIntCoord(k2)
+    print(point1, point2)
+
+    if (isKnightJunp(point1, point2)):
+        print('YES')
+    else:
+        print('NO')
 else:
     # print(k1, k2 ,'YES')
     print('ERROR')
-# проверку правильности хода нужно переделать!
+
 
 # verhnee pravo /2 vverh,1 vpravo
 # verhnee levo /2 vverh,-1 vpravo
