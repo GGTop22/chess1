@@ -14,7 +14,7 @@ def isKnightJump(p1: (int, int), p2: (int, int)) -> bool:
 
 
 def hodKonem(move):
-    move = move.upper()
+   #move = move.upper()
     if (len(move)) == 5:
         if move[2] != '-':
             return 'ERROR'
